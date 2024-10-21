@@ -1,0 +1,83 @@
+Kapitel,Frage,Antwort,Antwort-Ausgabe
+3.2 Wie der Einstieg in Rust gelingt,Kann man Rust-Projekte ohne Cargo erstellen?,j,"Warum das Leben schwer machen, mit rustc lässt ein Projekt auch ohne cargo kompilieren, jedoch muss man alle Datein rund um das Projekt selber anlegen."
+3.2 Wie der Einstieg in Rust gelingt,"Ist Rust eine Programmiersprache, die einfach zu lernen ist?",n,"Rust hat eine steile Lernkurve, einige Konzepte gelten allgemein als schwerer, wenn man jedoch schon Erfahrung mit C++ mitbringt wird es vermutlich einfacher sein."
+3.2 Wie der Einstieg in Rust gelingt,Ist die Rust-Dokumentationen hilfreich für den Einstieg?,j,"Die Dokumentation ist sehr gut und informativ aufgebaut, auch die Übungsbeispiel wie Rustlings sind super."
+3.2 Wie der Einstieg in Rust gelingt,Kann man Rust ohne Vorkenntnisse in anderen Programmiersprachen lernen?,j,"Die Frage zielt auf die vielen Diskussionen im Internet ab, dass davon abgeraten wird Rust als erste Sprache zu lernen. Es ist naürlich möglich, aber Vorwissen hilft, den Einstieg zu erleichtern."
+3.2 Wie der Einstieg in Rust gelingt,Rustlings ist ein interaktives Lernprogramm mit Programmierchallenges?,j,"Für jedes Kapitel in der Rust Doku gibt es Programmieraufgaben, sehr empfehlenswert. https://github.com/rust-lang/rustlings"
+3.3 Warum Denglish,Sind technische Begriffe in Denglish immer eindeutig?,n,Manchmal können sie missverständlich sein.
+3.3 Warum Denglish,Sind englische Begriffe in der Programmierung besser,j,"Eindeutig ja, da die Begriffe meiner Meinung nach genauder definiert sind und man auch bei Problemen gleich die richtigen Terme zur Recherche nutzen kann."
+3.3 Warum Denglish,Halden und Stapelspeicher sind etablierte Begriffe,n,"Etwas überspitzt, soll jedoch aufzeigen, dass die deutsche Übersetzung von Heap- und Stack doch etwas holprig ist."
+3.4 std und no_std,Bietet die Verwendung von no_std Zugriff auf alle Standardbibliotheken?,n,"no_std schränkt den Zugriff auf die Standardbibliothek ein, wie der Name schon impliziert."
+3.4 std und no_std,Ist no_std ideal für Embedded-Systeme?,j,no_std ist für ressourcenbeschränkte Umgebungen geeignet.
+3.4 std und no_std,Erfordert std mehr Ressourcen als no_std?,j,std benötigt in der Regel mehr Ressourcen.
+3.4 std und no_std,Kann man in einem no_std-Projekt externe Crates verwenden?,j,Externe Crates können in no_std verwendet werden.
+3.4 std und no_std,In no_std wird in Rust gibt es dennoch eine stack overflow protection,n,"nein die gibt es im no_std nicht. Die alteingesessenen C-Programmierer würden sagen, man provoziert auch keinen Stack overflow :)"
+3.4 std und no_std,Sind no_std-Projekte schwieriger zu entwickeln?,j,Es erfordert mehr Verständnis für Low-Level-Programmierung.
+3.5 Cargo und Crates,Kann Cargo ohne eine Cargo.toml-Datei verwendet werden?,n,Cargo.toml ist erforderlich für Cargo-Projekte hier werden die dependencies auch hinterlegt.
+3.5 Cargo und Crates,Sind Crates die grundlegenden Bausteine in Rust-Projekten?,j,Crates sind quasi die Librarys die wir vom Arduino C++ Umfeld kennen.
+3.5 Cargo und Crates,Bietet Cargo eine einfache Möglichkeit zum Kompilieren von Projekten?,j,"Ein Befehl genügt, um das gesamte Projekt zu kompilieren: cargo run"
+3.5 Cargo und Crates,Kann Cargo mehrere Versionen einer Abhängigkeit verwalten?,j,Cargo verwaltet Versionen automatisch. Cargo add <crates> oder cargo update
+3.7 Data Types,Gibt es in Rust Möglichkeiten benutzerdefinierte Datentypen zu erstellen?,j,Rust erlaubt die Definition eigener Datentypen.
+3.7 Data Types,Sind die Grunddatentypen in Rust stark typisiert?,j,"Rust hat ein starkes Typisierungssystem. U8, u16 i32 etc."
+3.7 Data Types,Kann man in Rust einen Datentyp ohne vorherige Initialsierung verwenden?,n,Datentypen müssen deklariert und intialisiert werden.
+3.7 Data Types,Bietet Rust Unterstützung für Nullable-Datentypen?,j,Option<T> ermöglicht Nullable-Datentypen.
+3.7 Data Types,Sind die Datentypen in Rust dynamisch?,n,"In Rust sind die Datentypen statisch, was bedeutet, dass der Typ einer Variable zur Kompilierzeit bekannt sein muss. Das hat den Vorteil, dass Fehler bereits beim Kompilieren erkannt werden können, bevor der Code ausgeführt wird."
+3.7 Data Types,Kann man in Rust Tuple-Datentypen verwenden?,j,Tuples erlauben die Gruppierung verschiedener Datentypen.
+3.9 Strings,Sind Strings in Rust unveränderlich?,n,Strings können veränderlich sein (String-Typ).
+3.9 Strings,Kann man in Rust verschiedene String-Typen verwenden?,j,Rust bietet String und &str.
+3.9 Strings,Erfordert die Arbeit mit Strings in Rust zusätzliche Bibliotheken?,n,Standardbibliothek reicht aus für grundlegende Funktionen.
+3.9 Strings,"Gibt es in Rust eine Möglichkeit, Strings zu verketten?",j,push_str und + Operator ermöglichen das Verketten.
+3.9 Strings,Sind Unicode-Zeichen in Rust-Strings unterstützt?,j,Rust-Strings unterstützen Unicode vollständig.
+3.9 Strings,Kann man Strings in Rust leicht formatieren?,j,Rust bietet einfache Formatierungsfunktionen jedoch sind diese Funktionen auf std beschränkt.
+3.10 Arrays fixe Datentypen,Sind Arrays in Rust veränderlich?,n,Arrays sind in Rust unveränderlich nach der Deklaration.
+3.10 Arrays fixe Datentypen,Kann man in Rust Arrays mit unterschiedlichen Datentypen erstellen?,n,Arrays müssen denselben Datentyp haben.
+3.10 Arrays fixe Datentypen,Bieten Arrays in Rust eine feste Größe?,j,Die Größe eines Arrays muss zur Kompilierzeit bekannt sein.
+3.10 Arrays fixe Datentypen,Sind Arrays in Rust automatisch initialisiert?,n,Arrays müssen manuell initialisiert werden.
+3.10 Arrays fixe Datentypen,Kann man auf Elemente in einem Array über Indizes zugreifen?,j,Zugriff erfolgt über Indizes.
+3.10 Arrays fixe Datentypen,Erlauben Rust-Arrays dynamische Größenänderung?,n,Die Größe von Arrays ist zur Laufzeit festgelegt.
+3.11 Vectoren,Muss man Vektoren in Rust vor der Verwendung initialisieren?,j,"Vektoren müssen initialisiert werden, bevor sie verwendet werden."
+3.11 Vectoren,Sind Vektoren in Rust unveränderlich?,n,Vektoren sind veränderlich.
+3.11 Vectoren,Kann man die Größe eines Vektors während der Laufzeit ändern?,j,Die Größe eines Vektors kann dynamisch angepasst werden.
+3.12 Struct,Sind Structs in Rust benutzerdefinierte Datentypen?,j,Structs ermöglichen die Gruppierung von Daten.
+3.12 Struct,Erlaubt Rust Structs die Speicherung von verschiedenen Datentypen?,j,Structs können unterschiedliche Datentypen enthalten.
+3.12 Struct,Muss jede Struct in Rust initialisiert werden?,j,Structs müssen vor der Verwendung initialisiert werden.
+3.12 Struct,Können Structs in Rust keine Methoden haben?,n,Structs können mit Methoden versehen werden.
+3.12 Struct,Sind Structs in Rust statisch typisiert?,j,Structs haben eine feste Typisierung.
+3.12 Struct,Kann man Structs in Rust erben?,n,Rust unterstützt keine Vererbung wie in OOP-Sprachen.
+3.13 Enum,Bietet Rust Unterstützung für Aufzählungstypen (enum)?,j,Enums sind eine wichtige Funktion in Rust.
+3.13 Enum,Können Enums in Rust mehrere Werte gleichzeitig speichern?,n,Enums können jeweils nur einen Wert speichern.
+3.13 Enum,Sind Enums in Rust immer unveränderlich?,n,Enums können auch veränderliche Felder haben.
+3.14 Functionen,Muss eine Funktion in Rust immer einen Rückgabewert haben?,n,Funktionen können auch () als Rückgabewert haben.
+3.14 Functionen,Können Funktionen in Rust mehrere Rückgabewerte haben?,j,Funktionen können mehrere Werte in einem Tuple zurückgeben.
+3.14 Functionen,Kann man Funktionen überladen?,n,Rust unterstützt keine Überladung von Funktionen.
+3.14 Functionen,Kann man in Rust anonyme Funktionen (Closures) erstellen?,j,Rust ermöglicht die Definition von Closures.
+3.14 Functionen,Können Funktionen in Rust selbst Funktionen zurückgeben?,j,Funktionen können andere Funktionen zurückgeben.
+3.15 Methoden-Implementierung statt OOP,Erlaubt Rust die Implementierung von Methoden für Structs?,j,Methoden können für Structs definiert werden.
+3.15 Methoden-Implementierung statt OOP,Können Methoden in Rust Vererbung unterstützen?,n,Rust verwendet Komposition statt Vererbung.
+3.15 Methoden-Implementierung statt OOP,Sind Methoden in Rust an Instanzen von Structs gebunden?,j,Methoden operieren auf Instanzen von Structs.
+3.15 Methoden-Implementierung statt OOP,Ist Rust eine objektorientierte Programmiersprache?,n,"Es wird Komposition verwendet, in Go wird das auch mit Interfaces umgesetzt"
+3.15 Methoden-Implementierung statt OOP,Können Methoden in Rust Datenkapselung bieten?,j,Methoden ermöglichen eine kontrollierte Datenzugriffsstrategie.
+3.16 Ownership,Kann man in Rust eine Variable ohne Ownership verwenden?,n,Variablen müssen Eigentum besitzen.
+3.16 Ownership,"Ermöglicht Rust, mehrere Besitzer für eine Variable zu haben?",n,Rust erlaubt nur einen Besitzer pro Variable.
+3.16 Ownership,"Bietet Rust die Möglichkeit, das Eigentum an Variablen zu übertragen?",j,Ownership kann einfach durch Zuweisung übertragen werden.
+3.16 Ownership,Kann man in Rust Ownership an einem Wert durch Referenzen vermeiden?,j,Referenzen ermöglichen den Zugriff ohne Ownership
+3.16 Ownership,Sind Ownership-Regeln in Rust optional?,n,Die Regeln sind ein zentraler Bestandteil von Rust.
+3.16 Ownership,Können in Rust Referenzen die Ownerships an Daten beeinflussen?,n,Referenzen ändern nicht Ownership.
+3.17 match statt if,Ist match in Rust eine Alternative zu if-Bedingungen?,j,match bietet ein elegantes Handling von Mustern.
+3.17 match statt if,Kann match in Rust mehrere Bedingungen gleichzeitig verarbeiten?,j,match kann mehrere Muster in einem Ausdruck behandeln.
+3.17 match statt if,Erfordert match in Rust eine Rückgabe?,j,match muss immer einen Wert zurückgeben.
+3.17 match statt if,Sind if-Bedingungen in Rust immer besser als match?,n,match ist oft klarer für komplexe Bedingungen.
+3.17 match statt if,Kann match in Rust nur mit Enums verwendet werden?,n,"match kann mit jedem Typ verwendet werden, der Muster unterstützt."
+3.18 for while und loop,Gibt es in Rust speziellen Loop-Typ?,j,"Rust hat for, while und loop als Loop-Typen."
+3.18 for while und loop,Kann man in Rust eine unendliche Schleife mit loop erstellen?,j,loop erzeugt eine unendliche Schleife.
+3.18 for while und loop,Sind for-Schleifen in Rust für Arrays und Vektoren geeignet?,j,for-Schleifen können über Arrays und Vektoren iterieren.
+3.18 for while und loop,Bieten while-Schleifen in Rust keine Abbruchbedingung?,n,while benötigt eine Bedingung für den Abbruch.
+3.19 Module,Erlaubt Rust die Strukturierung von Code in Module?,j,"Module helfen, Code zu organisieren und zu kapseln."
+3.19 Module,Müssen Module in Rust immer in separaten Dateien definiert werden?,n,Module können auch in derselben Datei definiert werden.
+3.20 Generische Strukturen,Erlaubt Rust die Verwendung von generischen Datentypen in Strukturen?,j,Generische Strukturen sind eine leistungsstarke Funktion in Rust.
+3.20 Generische Strukturen,Können generische Strukturen in Rust nur mit einem Datentyp verwendet werden?,n,Generische Strukturen können mehrere Typen haben.
+3.21 Error handling,Erlaubt Rust eine sichere Fehlerbehandlung?,j,Rust verwendet Result und Option für Fehlerbehandlung.
+3.21 Error handling,"Bietet Rust eine einfache Möglichkeit, Fehler zurückzugeben?",j,Result ermöglicht eine einfache Fehlerübertragung.
+3.22 Unittests in Rust,Unterstützt Rust die Durchführung von Unittests?,j,Rust hat ein integriertes Testsystem.
+3.22 Unittests in Rust,Muss man Unittests in Rust immer manuell ausführen?,n,Unittests können automatisch mit cargo test ausgeführt werden.
+3.22 Unittests in Rust,Können Unittests in Rust mehrere Testfälle enthalten?,j,Ein Test kann mehrere Assertions enthalten.
