@@ -16,3 +16,8 @@
 - Mini Breadboard: <https://amzn.to/3X5BLnv> \*
 - Litzen sortiert: <https://amzn.to/43ilJbU> \*
 - LED Sortiment: <https://amzn.to/3vTyDRa> \*
+
+
+Meine Videos/Inhlate enthalten bezahlte Produktplatzierungen. Alle Links mit "*" sind Amazon/Aliexpress Affiliate Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
+Dieses Video/Inhalt wird unter der MIT-Lizenz ohne Gewähr bereitgestellt; die Nutzung erfolgt auf eigenes Risiko.
+Impressum: pixeledi.eu/impressum
